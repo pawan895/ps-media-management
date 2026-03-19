@@ -25,12 +25,13 @@ export default function AdminLayout({
   children: React.ReactNode
 }) {
   const router = useRouter()
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<{ id: string; email?: string; role?: string; name?: string } | null>(null)
   const [loading, setLoading] = useState(true)
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   useEffect(() => {
     checkUser()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const checkUser = async () => {
@@ -56,7 +57,7 @@ export default function AdminLayout({
       }
 
       setUser(userData)
-    } catch (error) {
+    } catch {
       router.push('/admin/login')
     } finally {
       setLoading(false)

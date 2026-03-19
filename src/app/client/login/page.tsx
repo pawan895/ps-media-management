@@ -38,8 +38,8 @@ export default function ClientLoginPage() {
       }
 
       router.push('/client/dashboard')
-    } catch (err: any) {
-      setError(err.message || 'Failed to login')
+    } catch (err) {
+      setError((err as Error).message || 'Failed to login')
     } finally {
       setLoading(false)
     }

@@ -164,7 +164,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">About PS Media</h2>
           <p className="text-xl text-slate-300 leading-relaxed">
-            We're a specialized team focused on helping businesses scale their infrastructure 
+            We&apos;re a specialized team focused on helping businesses scale their infrastructure 
             with modern DevOps practices and AI integration. With expertise in Kubernetes, 
             Terraform, Ansible, and cutting-edge AI technologies, we deliver solutions that 
             are reliable, scalable, and maintainable.
@@ -177,7 +177,7 @@ export default function HomePage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-4">Get In Touch</h2>
           <p className="text-slate-400 text-center mb-12">
-            Ready to scale your infrastructure? Let's talk about your project.
+            Ready to scale your infrastructure? Let&apos;s talk about your project.
           </p>
           
           <form className="space-y-6">

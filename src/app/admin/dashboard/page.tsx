@@ -8,9 +8,7 @@ import {
   FileText, 
   TrendingUp,
   DollarSign,
-  Clock,
-  CheckCircle,
-  AlertCircle
+  Clock
 } from 'lucide-react'
 
 export default function AdminDashboard() {
